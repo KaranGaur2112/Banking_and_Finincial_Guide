@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: rgba(187, 187, 245);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 0 40px 20px rgba(0, 0,0, 0.26);
+    
+}
+.inner-box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+     transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: 1s;
+} 
+ h2{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.front-cov,.back-cov{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 100, 0.6),rgba(0, 0, 100, 0.6)),url("background.jpg");
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+.back-cov{
+    transform: rotateY(-180deg);
+    
+}
+.input-box{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 18px;
+    background: transparent;
+    border: 1px solid rgb(167, 60, 255);
+    padding: 8px 15px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+    color: white;
+    outline: none;
+}
+button{
+    width: 100%;
+    border-radius: 18px;
+    background: transparent;
+    border: 1px solid rgb(167, 60, 255);
+    padding: 8px 15px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 38px;
+    margin-bottom: 5px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+button:hover{
+    background:rgb(167, 60, 255);
+}
+::placeholder{
+    color: rgb(177, 172, 172);
+    font-size: 12px;
+}
+.check{
+    margin-top: 10px;
+}
+span{
+    color: white;
+    
+    padding: 0px 10px;
+}
+.form a{  
+    display: inline-block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 8p 8px;
+    margin-top: 10px;
+}
+a:hover{
+    border-bottom: 2px solid rgba(167, 60, 255);
+}
